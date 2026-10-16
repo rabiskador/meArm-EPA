@@ -65,8 +65,8 @@ O código utiliza o endereço I2C `0x3C`. Alguns módulos podem utilizar outro e
 | Analógico esquerdo — eixo X | Girar a base |
 | Analógico esquerdo — eixo Y | Movimentar o ombro |
 | Analógico direito — eixo Y | Movimentar o cotovelo |
-| R1 | Abrir a garra |
-| L1 | Fechar a garra |
+| R2 | Abrir a garra |
+| L2 | Fechar a garra |
 | Quadrado | Retornar à posição inicial |
 | Options | Alternar velocidade lenta/normal |
 
