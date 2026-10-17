@@ -31,7 +31,7 @@ O sistema permite movimentar os eixos do braço robótico em tempo real, control
 
 | Eixo | GPIO do ESP32 |
 |---|---|
-| Base | GPIO 4 |
+| Base | GPIO 21 |
 | Ombro | GPIO 5 |
 | Cotovelo | GPIO 18 |
 | Garra | GPIO 19 |
