@@ -8,6 +8,7 @@
 
   PREPARAÇÃO (Arduino IDE)
     - Placa: "ESP32 + Bluepad32" (pacote esp32_bluepad32) > ESP32 Dev Module
+    https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
     - Biblioteca: ESP32Servo (Gerenciador de Bibliotecas)
     - Para compilar SEM o controle (qualquer placa ESP32), troque
       USAR_CONTROLE para 0 logo abaixo.
