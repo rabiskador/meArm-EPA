@@ -8,7 +8,7 @@
 
   PREPARAÇÃO (Arduino IDE)
     - Placa: "ESP32 + Bluepad32" (pacote esp32_bluepad32) > ESP32 Dev Module
-    https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
+    - Colar em Arquivo -> Preferencias -> URLS = https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json
     - Biblioteca: ESP32Servo (Gerenciador de Bibliotecas)
     - Para compilar SEM o controle (qualquer placa ESP32), troque
       USAR_CONTROLE para 0 logo abaixo.
@@ -57,7 +57,7 @@
 #include <math.h>
 
 // ---------------- PINOS ----------------
-const uint8_t PINOS[4] = {4, 5, 18, 19};
+const uint8_t PINOS[4] = {4, 21, 18, 19};
 const char*   NOMES[4] = {"BASE", "OMBRO", "COTOVELO", "GARRA"};
 enum { BASE = 0, OMBRO = 1, COTOVELO = 2, GARRA = 3 };
 
@@ -94,8 +94,8 @@ const float GARRA_FECHADA = 80;
 //   OMBRO: 20 a 80 (medido: começa a zumbir em 15)
 //   COTOVELO: 5 a 75 (medido: vai de 0 a 80, 0 = antebraço para baixo, 80 = para cima; 5 graus de folga)
 //                    BASE OMBRO COTOVELO GARRA
-float LIM_MIN[4] = {   49,   20,       5,     0 };
-float LIM_MAX[4] = {  145,   80,      75,    80 };
+float LIM_MIN[4] = {   10,   20,       5,     0 };
+float LIM_MAX[4] = {  150,   80,      75,    80 };
 bool  modoLivre  = false;
 float limMin(uint8_t i) { if (i == GARRA) return LIM_MIN[GARRA]; return modoLivre ? 10.0f  : LIM_MIN[i]; }
 float limMax(uint8_t i) { if (i == GARRA) return LIM_MAX[GARRA]; return modoLivre ? 170.0f : LIM_MAX[i]; }
