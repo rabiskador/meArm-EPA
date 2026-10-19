@@ -1,7 +1,7 @@
 /*
   MeArm + ESP32 - PROJETO COMPLETO
   Controle pelo PS3 (DualShock 3 / Sixaxis, via Bluepad32) e pelo Monitor Serial.
-
+ 
   Usa a calibração dos servos e a cinemática inversa (IK) da biblioteca meArm
   (York Hackspace / Nick Moriarty, licença MIT), portadas para o ESP32.
   NÃO precisa instalar a biblioteca meArm: tudo está neste arquivo.
